@@ -8,7 +8,6 @@ body {
   width: 1440px;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
-  height: auto;
 }
 
 .wrapper {
@@ -202,20 +201,70 @@ body {
 footer {
   background-color: #2d314e;
   height: 150px;
-  display: grid;
   align-content: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-}
-footer div {
-  margin: 0 auto;
-}
-footer div .social {
-  display: flex;
   width: 100%;
   height: 100%;
+}
+footer div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  margin: 0 auto;
+  width: 80%;
+  height: 150px;
+}
+footer div figure {
+  align-items: end;
+  display: flex;
+  height: 75px;
+  grid-row: 1/2;
+}
+footer div .social {
+  width: 100%;
+  height: auto;
   align-items: flex-end;
-  padding-top: 30px;
   justify-content: space-between;
+  grid-column: 1/2;
+}
+footer div .menu2 {
+  flex-direction: column;
+  height: 150px;
+  display: flex;
+  justify-content: end;
+}
+footer div .menu2 a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px 10px 10px;
+}
+footer div .menu_footer2 {
+  grid-row: 1/3;
+}
+footer div .menu_footer {
+  grid-row: 1/3;
+}
+footer div p {
+  font-size: 13px;
+  grid-column: 5/6;
+  grid-row: 2/3;
+  align-items: flex-end;
+  display: flex;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #707183;
+}
+footer .menu__boton--mod {
+  background-image: linear-gradient(90deg, #31D35C, #2BB7DA);
+  padding: 13px 20px 13px 20px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  height: 40px;
+  grid-column: 5/6;
+  grid-row: 1/2;
+  width: 40%;
+  margin-top: 50px;
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
