@@ -105,7 +105,117 @@ body {
 }
 
 .easy {
-  height: 900px;
+  height: auto;
+  background-color: #f4f5f7;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 50px;
+}
+.easy .easy__title {
+  width: 50%;
+  margin: 50px 0px;
+}
+.easy .easy__title h2 {
+  font-size: 40px;
+  font-weight: 300;
+  padding: 30px 0 30px 0;
+  color: #3a3b4f;
+}
+.easy .easy__title p {
+  font-size: 20px;
+  color: #9898a0;
+}
+.easy .easy__reasons {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-areas: "articulo1 articulo2 articulo3 articulo4";
+  grid-gap: 20px;
+}
+.easy .easy__reasons article h3 {
+  color: #3a3b4f;
+  padding: 20px 0px;
+}
+.easy .easy__reasons article p {
+  color: #9e9ea6;
+}
+.easy .easy__reasons .article1 {
+  grid-area: articulo1;
+  width: auto;
+}
+.easy .easy__reasons .article2 {
+  grid-area: articulo2;
+  width: auto;
+}
+.easy .easy__reasons .article3 {
+  grid-area: articulo3;
+  width: auto;
+}
+.easy .easy__reasons .article4 {
+  grid-area: articulo4;
+  width: auto;
+}
+
+.news {
+  margin: 0 auto;
+  margin-left: 50px;
+  height: 550px;
+}
+.news h2 {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 40px 0;
+}
+.news .news__articles {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.news .news__articles article {
+  width: 90%;
+}
+.news .news__articles article img {
+  width: 85%;
+  height: 200px;
+  overflow: hidden;
+}
+.news .news__articles article h5 {
+  width: 70%;
+  font-size: 10px;
+  margin: 30px 0 10px 0;
+}
+.news .news__articles article h4 {
+  width: 70%;
+  color: #3c3b41;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.news .news__articles article p {
+  width: 70%;
+  font-size: 13px;
+  font-weight: 300;
+  color: #9f9ea3;
+}
+
+footer {
+  background-color: #2d314e;
+  height: 150px;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+footer div {
+  margin: 0 auto;
+}
+footer div .social {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  padding-top: 30px;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */
