@@ -8,14 +8,23 @@ body {
   width: 1440px;
   font-family: "Public Sans", sans-serif;
   font-size: 18px;
+  height: auto;
+}
+
+.wrapper {
+  width: 1440px;
+  overflow: hidden;
 }
 
 .navbar {
   display: flex;
-  width: 100%;
+  width: 1440px;
   height: 85px;
   justify-content: space-evenly;
   align-items: center;
+  position: absolute;
+  z-index: 9;
+  background-color: white;
 }
 .navbar .logo-container {
   width: 20%;
@@ -34,13 +43,69 @@ body {
   margin: 15px;
   color: #9f9ea4;
 }
-.navbar .menu__boton {
+
+.menu__boton {
   background-image: linear-gradient(90deg, #31D35C, #2BB7DA);
-  padding: 10px 30px 10px 30px;
+  padding: 13px 30px 13px 30px;
   border-radius: 20px;
   color: white;
   border: none;
   font-weight: 700;
+}
+
+.central-content {
+  margin: 0 auto;
+  margin-left: 50px;
+  display: grid;
+  height: 700px;
+  width: 100%;
+  background-color: #fafafa;
+  grid-template-areas: "texto texto texto img img img img";
+  align-items: center;
+}
+.central-content .central-content__text {
+  z-index: 2;
+  position: relative;
+  padding-left: 20px;
+  top: -450px;
+  width: 80%;
+  grid-area: texto;
+}
+.central-content .central-content__text h1 {
+  width: 60%;
+  font-size: 47px;
+  font-weight: 300;
+  color: #313443;
+}
+.central-content .central-content__text p {
+  color: #9898a0;
+  line-height: 1.5;
+  width: 85%;
+  margin-top: 20px;
+}
+.central-content .central-content__text button {
+  margin-top: 30px;
+}
+.central-content figure {
+  display: grid;
+  grid-gap: 2px;
+  grid-area: img;
+}
+.central-content figure #cel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.central-content figure #cel2 {
+  position: relative;
+  top: -910px;
+  left: -130px;
+  z-index: 0;
+  width: 150%;
+}
+
+.easy {
+  height: 900px;
 }
 
 /*# sourceMappingURL=styles.css.map */
