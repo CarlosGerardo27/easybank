@@ -77,18 +77,17 @@ body{
 }
 
 .central-content{
+    display: flex;
     margin: 0 auto;
     margin-left: 50px;
     height: 700px;
     width: 100%;
     background-color: #fafafa;
-    align-items: center;
     .central-content__text{
-        z-index: 2;
-        position: relative;
         padding-left: 20px;
         width: 50%;
-        grid-area: texto;
+        height: 100%;
+        padding-top: 200px;
         h1{
             width: 60%;
             font-size: 47px;
@@ -304,7 +303,7 @@ footer{
 
 //Responsive Desing
 
-@media (min-width: 800px){
+/* @media (min-width: 800px){
     .navbar{
         display: flex;
     }
@@ -314,8 +313,10 @@ footer{
         .central-content__text{
             position: unset;
         }
-        figure img{
+        figure{
+            
+        } img{
             position: unset;
         }
     }
-}
+} */
