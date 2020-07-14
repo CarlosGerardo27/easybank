@@ -514,10 +514,11 @@ footer .menu__boton--mod:hover {
   .mobile-wrapper {
     background-image: url("/images/bg-intro-mobile.svg");
     background-size: contain;
+    width: 100%;
     background-size: 80%;
     background-position: 20% 10%;
     padding: 1em 1.5em;
-    position: relative;
+    position: absolute;
     z-index: 7;
   }
   .mobile-wrapper #menu-mobile {
@@ -530,9 +531,10 @@ footer .menu__boton--mod:hover {
   .central-content_m {
     height: auto;
     padding-top: 2em;
-  }
-  .central-content_m #desktop-mockup {
-    display: none;
+    /*  se oculta el contenedor de las imagenes del contenido central    
+    #desktop-mockup{ 
+            display: none;
+        } */
   }
 
   .footer .footer-wrapper {

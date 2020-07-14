@@ -5,8 +5,13 @@ var twitter = document.getElementById("twitter");
 var pinterest = document.getElementById("pinterest");
 var instagram = document.getElementById("instagram");
 var mobileBg = document.getElementById("mobile")
+var menum_button=document.getElementById("menum-button__container")
 var menuMobile = document.getElementById("menu-mobile")
+var menuMobileWrapper= document.getElementById("menu-mobile-wrapper")
 
+
+
+//***********colores hover para iconos de redes sociales
 
 facebook.addEventListener("mouseover",function(){
     facebook.style.fill="#2BB7DA"
@@ -44,4 +49,14 @@ instagram.addEventListener("mouseleave",function(){
 })
 
 
+//*************** menu mobile toggle */
 
+menum_button.addEventListener("click",function(){
+    if(menuMobileWrapper.classList.contains("hide")){
+        menuMobileWrapper.classList.remove("hide")
+        console.log("menu mobile active")
+    }else{
+        menuMobileWrapper.classList.add("hide")
+        console.log("menu mobile inactive")
+    }
+})
