@@ -4,7 +4,7 @@ var youtube = document.getElementById("youtube");
 var twitter = document.getElementById("twitter");
 var pinterest = document.getElementById("pinterest");
 var instagram = document.getElementById("instagram");
-
+var mobileBg = document.getElementById("mobile")
 
 
 facebook.addEventListener("mouseover",function(){
@@ -41,4 +41,5 @@ instagram.addEventListener("mouseover",function(){
 instagram.addEventListener("mouseleave",function(){
     instagram.style.fill="#fff"
 })
+
 

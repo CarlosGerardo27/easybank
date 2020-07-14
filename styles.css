@@ -10,6 +10,10 @@ body {
   font-size: 18px;
 }
 
+.hide {
+  display: none;
+}
+
 .wrapper {
   width: 100%;
   overflow: hidden;
@@ -21,7 +25,7 @@ body {
   height: 85px;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
+  position: relative;
   z-index: 9;
   background-color: white;
 }
@@ -85,6 +89,7 @@ body {
   height: 700px;
   width: 100%;
   background-color: #fafafa;
+  box-sizing: border-box;
 }
 .central-content .central-content__text {
   padding-left: 20px;
@@ -302,22 +307,97 @@ footer .menu__boton--mod:hover {
   background-image: linear-gradient(90deg, #70e18e, #6ccde5);
 }
 
-/* @media (min-width: 800px){
-    .navbar{
-        display: flex;
-    }
-    .central-content{
-        margin: 0 auto;
-        display: flex;
-        .central-content__text{
-            position: unset;
-        }
-        figure{
+@media only screen and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
 
-        } img{
-            position: unset;
-        }
-    }
-} */
+  .navbar {
+    position: absolute;
+    margin-bottom: 10px;
+  }
+
+  .central-content {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 2em;
+    padding-top: 10px;
+  }
+  .central-content .central-content__text {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0px;
+    align-content: center;
+  }
+  .central-content .central-content__text h1 {
+    width: auto;
+    text-align: center;
+  }
+  .central-content .central-content__text p {
+    text-align: center;
+    width: 100%;
+  }
+  .central-content .central-content__text button {
+    align-self: center;
+    width: 180px;
+  }
+  .central-content figure {
+    margin: 0 auto;
+    margin: 10px;
+    position: unset;
+    width: 90%;
+    text-align: center;
+    display: flex;
+  }
+  .central-content figure #cel {
+    position: relative;
+    left: 70%;
+    z-index: 1;
+    width: 60%;
+    margin: 0;
+  }
+  .central-content figure #cel2 {
+    position: relative;
+    top: unset;
+    left: unset;
+    z-index: 0;
+    width: 80%;
+    float: left;
+    margin: 0;
+  }
+
+  .easy {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 2em;
+  }
+  .easy .easy__title {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 3em;
+  }
+  .easy .easy__reasons {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .easy .easy__reasons .reason {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
