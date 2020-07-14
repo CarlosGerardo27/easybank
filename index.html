@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="icon"   href="/images/favicon-32x32.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
@@ -17,24 +18,28 @@
         <figure class="logo-container">
           <img src="/images/logo.svg" alt="logo" />
         </figure>
-        <ul class="menu">
+        <ul class="menu" id="menu-desktop">
           <li class="menu__element"><a href="#">Home</a></li>
           <li class="menu__element"><a href="#">About</a></li>
           <li class="menu__element"><a href="#">Contact</a></li>
           <li class="menu__element"><a href="#">Blog</a></li>
           <li class="menu__element"><a href="#">Careers</a></li>
         </ul>
-        <ul class="menu-mobile">
-          <li class="menu__element"><a href="#">Home</a></li>
-          <li class="menu__element"><a href="#">About</a></li>
-          <li class="menu__element"><a href="#">Contact</a></li>
-          <li class="menu__element"><a href="#">Blog</a></li>
-          <li class="menu__element"><a href="#">Careers</a></li>
-        </ul>
+        <img class="hide" id="menu-icon" src="/images/icon-hamburger.svg" alt="menu">
+        <img class="hide" id="close" src="/images/icon-close.svg" alt="close">
         <button class="menu__boton">Request Invite</button>
       </nav>
+      <div class="mobile-wrapper">
+        <ul class="menu-mobile menu" id="menu-mobile">
+          <li class="menu__element"><a href="#">Home</a></li>
+          <li class="menu__element"><a href="#">About</a></li>
+          <li class="menu__element"><a href="#">Contact</a></li>
+          <li class="menu__element"><a href="#">Blog</a></li>
+          <li class="menu__element"><a href="#">Careers</a></li>
+        </ul>
+      </div>
       <!--  seccion principal -->
-      <section class="central-content">
+      <section class="central-content central-content_m">
         <div class="central-content__text">
           <h1>Next generation digital banking</h1>
           <p>
@@ -46,10 +51,9 @@
             Request Invite
           </button>
         </div>
-        <figure>
+        <figure id="desktop-mockup">
           <img id="cel" src="/images/image-mockups.png" alt="mockups" />
           <img id="cel2" src="/images/bg-intro-desktop.svg" alt="background" />
-          <img id="mobile" class="hide" src="/images/bg-intro-mobile.svg" alt="mobile background">
         </figure>
       </section>
       <!-- Seccion why easybank -->

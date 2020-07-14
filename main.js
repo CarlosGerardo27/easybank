@@ -5,6 +5,7 @@ var twitter = document.getElementById("twitter");
 var pinterest = document.getElementById("pinterest");
 var instagram = document.getElementById("instagram");
 var mobileBg = document.getElementById("mobile")
+var menuMobile = document.getElementById("menu-mobile")
 
 
 facebook.addEventListener("mouseover",function(){
@@ -41,5 +42,6 @@ instagram.addEventListener("mouseover",function(){
 instagram.addEventListener("mouseleave",function(){
     instagram.style.fill="#fff"
 })
+
 
 
