@@ -10,7 +10,7 @@ body{
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 .menum-button {
     display: none;
@@ -476,9 +476,9 @@ footer{
         
       }
 
-      #close{
+/*       #close{
           display: none;
-      }
+      } */
 
 .menu{
     margin: 0 auto;

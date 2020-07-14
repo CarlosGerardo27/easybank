@@ -8,6 +8,8 @@ var mobileBg = document.getElementById("mobile")
 var menum_button=document.getElementById("menum-button__container")
 var menuMobile = document.getElementById("menu-mobile")
 var menuMobileWrapper= document.getElementById("menu-mobile-wrapper")
+var closeButton = document.getElementById("close")
+var menu_icon = document.getElementById("menu-icon")
 
 
 
@@ -58,5 +60,12 @@ menum_button.addEventListener("click",function(){
     }else{
         menuMobileWrapper.classList.add("hide")
         console.log("menu mobile inactive")
+    }
+    if(closeButton.classList.contains("hide")){
+        closeButton.classList.remove("hide")
+        menu_icon.classList.add("hide")
+    }else{
+        closeButton.classList.add("hide")
+        menu_icon.classList.remove("hide")
     }
 })

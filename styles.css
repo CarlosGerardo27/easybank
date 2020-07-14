@@ -11,7 +11,7 @@ body {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .menum-button {
@@ -474,10 +474,9 @@ footer .menu__boton--mod:hover {
     box-shadow: 2px 2px #cccccc inset, 2px 2px 3px gainsboro inset;
   }
 
-  #close {
-    display: none;
-  }
-
+  /*       #close{
+            display: none;
+        } */
   .menu {
     margin: 0 auto;
     width: 100%;
